@@ -1,0 +1,25 @@
+.vaizfalar .ansor-hero {
+    margin-top: 50PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.vaizfalar .ansor-hero .visit{
+    margin-top: 20px;
+}
+
+.logo-sub-box{
+    display:  flex;
+    align-items: center;
+}
+.logo-sub-box span{
+    font-size: 35px;
+    margin-left: 10px;
+    color: antiquewhite;
+}
+.logo-sub-box img{
+    border-radius: 12px;
+}
