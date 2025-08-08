@@ -9,11 +9,10 @@ body {
     padding: 0%;
 }
 
-
 .cray {
     display: flex;
     width: 100%;
-    max-width: 1160px;
+    max-width: 992px;
     align-items: center;
     justify-content: space-between;
     margin: auto;
