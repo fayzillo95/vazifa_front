@@ -110,6 +110,7 @@ body {
     width: 100%;
     border: solid greenyellow 2px;
 }
+
 .logo {
     background: linear-gradient(270deg, #11b342a4, #1b169ed2, #b8562f, #facc15);
     background-size: 800% 800%;
@@ -130,9 +131,16 @@ body {
     }
 }
 
-
-@media(max-width:992px){
-    .vaizfalar{
+@media (max-width: 992px) {
+    .vaizfalar, .akademik, .ansor-med {
         flex-direction: column;
+        margin: auto;
+        height: auto;
+        border: solid greenyellow 2px;
+        align-items: center;
+        width: 100%;
+    }
+    body{
+        height: auto;
     }
 }
