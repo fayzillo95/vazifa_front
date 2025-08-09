@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/tilewend.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/display.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 
 
@@ -18,38 +16,37 @@
     <header id="site-header">
 
         <!-- header section -->
-        <section id="header-section" class="justify-betwen">
-            <div class="container nav-container flex item-center m-auto justify-betwen">
+        <section id="header-section">
+            <div class="container nav-container justify-betwen item-center">
                 <div class="flex item-center justify-ceter logo">
                     <img src="./img/site logo.svg" alt="">
                 </div>
-                <nav id="head-nav-list" class="flex item-center justify-ceter header-nav gap-30">
+                <nav id="head-nav-list">
                     <span class="nav-item">Pages</span>
                     <span class="nav-item">Prodact</span>
                     <span class="nav-item">Shop</span>
                     <span class="nav-item">Home</span>
                 </nav>
-                <div id="head-icons" class="flex item-center header-icons gap-30">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                </div>
-                <i id="menu-btn" class="fa fa-bars none-disp" aria-hidden="true"></i>
+                <ul id="head-icons">
+                    <li class="icon"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="icon"><i class="fa fa-user" aria-hidden="true"></i></li>
+                    <li class="icon"><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                    <li class="icon"><i class="fa fa-bars" aria-hidden="true" id="menu-btn" ></i></li>
+                </ul>
             </div>
         </section>
         <!-- /header section -->
 
         <!-- header hero -->
-        <section id="hero-section">
+        <!-- <section id="hero-section">
             <div class="container">
 
             </div>
-        </section>
+        </section> -->
         <!-- /header hero -->
 
     </header>
-    <div class="menu" id="overlay"></div>
     <!-- /header  -->
 
     <!-- main -->
@@ -96,7 +93,7 @@
 
 
     <!-- scrips -->
-    <script src="./scripts/conponents.js"></script>
+    <!-- <script src="./scripts/conponents.js"></script> -->
     <script src="./scripts/menu.wrapper.js"></script>
 
 </body>
