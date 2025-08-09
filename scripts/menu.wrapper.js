@@ -23,8 +23,20 @@ window.addEventListener("resize", () => {
     if (navList.classList.contains("show")) {
         navList.classList.remove("show")
     }
-    else if (menuBtn.classList.contains("fa-times")) {
+    if (menuBtn.classList.contains("fa-times")) {
         menuBtn.classList.remove("fa-times")
         menuBtn.classList.add("fa-bars")
+    }
+})
+
+window.addEventListener("click", (event) => {
+    if (event.target && event.target !== navList && event.target !== menuBtn) {
+        if (menuBtn.classList.contains("fa-times")) {
+            if (navList.classList.contains("show")) {
+                navList.classList.remove("show")
+            }
+            menuBtn.classList.remove("fa-times")
+            menuBtn.classList.add("fa-bars")
+        }
     }
 })
