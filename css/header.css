@@ -3,7 +3,7 @@ li {
 }
 
 .show {
-    right: 0 !important;
+    left: 0 !important;
     display: flex !important;
 }
 
@@ -31,7 +31,7 @@ li {
         display: none;
         height: 100vh;
         top: 50px;
-        right: -300px;
+        left: -300px;
         background-color: aqua;
         position: absolute;
         transition: right 0.5s;
@@ -62,7 +62,7 @@ li {
         position: fixed;
         transition: right 0.5s;
         opacity: 0.7;
-        top: 50px;
+        top: 250px;
     }
 
     #menu-btn {
