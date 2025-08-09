@@ -4,6 +4,7 @@ li {
 
 .show {
     right: 0 !important;
+    display: flex !important;
 }
 
 #menu-btn {
@@ -27,6 +28,7 @@ li {
         flex-direction: column;
         width: 150px;
         padding: 22px;
+        display: none;
         height: 100vh;
         top: 50px;
         right: -300px;
