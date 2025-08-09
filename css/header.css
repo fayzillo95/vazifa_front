@@ -4,7 +4,6 @@ li {
 
 .show {
     left: 0 !important;
-    display: flex !important;
 }
 
 #menu-btn {
@@ -28,13 +27,13 @@ li {
         flex-direction: column;
         width: 150px;
         padding: 22px;
-        display: none;
         height: 100vh;
         top: 50px;
         left: -300px;
         background-color: aqua;
         position: absolute;
-        transition: right 0.5s;
+        transition: left 0.5s;
+        gap: 5px;
     }
 
     #menu-btn {
@@ -60,7 +59,7 @@ li {
         left: -15px;
         background:transparent;
         position: fixed;
-        transition: right 0.5s;
+        transition: all 0.5s;
         opacity: 0.7;
         top: 250px;
     }
