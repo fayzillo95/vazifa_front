@@ -1,6 +1,34 @@
-#header-section{
-    padding-top: 16px;
-    padding-bottom: 16px;
-    position: relative;
-    height: 100px;
+#header-section {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+}
+
+.menu {
+    width: 150px;
+    height: 100vh;
+    top: 50px;
+    right: -155px;
+    background-color: blueviolet;
+    color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 25px;
+    position: absolute;
+    transition: right 0.5s ease;
+    gap: 25px;
+    z-index: 1000;
+}
+
+.show {
+    right: 0px;
+}
+
+
+@media(max-width:992px) {
+    #header-section {
+        padding: 0 25px;
+    }
 }
