@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 input{
     display: block;
     border: solid 2px black;
@@ -31,11 +32,11 @@ input{
 .main-flex {
     @apply  bg-amber-50 flex w-6xl h-[700px] rounded-[32px] overflow-hidden  m-auto 
     /* responsive */
-    max-[1159px]:flex-col max-[1159px]:h-[1600px] max-[1159px]:w-[576px];
+    max-[1159px]:flex-col max-[1159px]:h-[1600px] max-[1159px]:w-[576px] shadow-[25px_25px_10px_rgba(55,55,15,0.7)];
 }
 
 body{
-    @apply *:m-0 w-full bg-amber-200 h-[100vh] flex flex-col justify-center items-center;
+    @apply *:m-0 w-full bg-cyan-900 h-[100vh] flex flex-col justify-center items-center;
 }
 
 
@@ -56,4 +57,14 @@ label:hover, h1:hover{
 
 span:hover{
     @apply cursor-not-allowed
+}
+
+.left-panel,.right-panel,.main-flex{
+    @apply max-[592]:w-[100%]
+}
+body{
+    @apply max-[592]:h-[1400px]
+}
+.left-panel,.right-panel{
+    @apply max-[592]:h-[600px]
 }
