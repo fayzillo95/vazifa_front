@@ -1,0 +1,59 @@
+@import "tailwindcss";
+input{
+    display: block;
+    border: solid 2px black;
+}
+
+.input-style {
+    @apply h-13 w-full rounded-[6px] mt-[10px] pl-0.5 border-gray-400;
+}
+
+.unit-style {
+    @apply absolute right-[2px] text-[20px]  font-mono font-extrabold pr-[15px] bg-gray-200 px-4 mt-[10px] rounded-r-[6px] h-[48px] flex items-center;
+}
+
+.radio-style {
+    @apply flex w-full rounded-[6px] mt-[10px] border-2 h-13 items-center pl-4  border-gray-400 hover:border-gray-900;
+}
+
+.left-panel {
+    @apply w-1/2 flex flex-col px-8 max-[1159px]:w-[576px] max-[1159px]:h-[700px];
+}
+
+.right-panel {
+    @apply w-1/2 bg-cyan-950 
+    flex flex-col pl-8 justify-center gap-3 items-center 
+    rounded-bl-[100px] 
+    /* responsive */
+    max-[1159px]:w-[576px] max-[1159px]:h-[700px] max-[1159px]:rounded-b-[32px];
+}
+
+.main-flex {
+    @apply  bg-amber-50 flex w-6xl h-[700px] rounded-[32px] overflow-hidden  m-auto 
+    /* responsive */
+    max-[1159px]:flex-col max-[1159px]:h-[1600px] max-[1159px]:w-[576px];
+}
+
+body{
+    @apply *:m-0 w-full bg-amber-200 h-[100vh] flex flex-col justify-center items-center;
+}
+
+
+.left-span{
+    @apply h-[48px] ml-[2px] font-mono font-extrabold bg-gray-200 absolute mt-[10px] rounded-l-[6px] px-4 text-center flex items-center
+}
+
+.label-style{
+    @apply text-[16px] ;
+}
+
+.submit:hover{
+    @apply  bg-amber-300  border-gray-900 cursor-pointer;
+}
+label:hover, h1:hover{
+    @apply hover:cursor-not-allowed
+}
+
+span:hover{
+    @apply cursor-not-allowed
+}

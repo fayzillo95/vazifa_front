@@ -4,204 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/body.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <title>FAYZILLO_DARS_11</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/output.css">
 </head>
 
+<body class="">
+    <div class="main-flex">
 
-<body>
-    <!-- header  -->
-    <header id="site-header">
-
-        <!-- header section -->
-        <section id="header-section">
-            <div class="container nav-container justify-betwen item-center">
-                <div class="flex item-center justify-ceter logo">
-                    <img src="./img/site logo.svg" alt="">
-                </div>
-                <nav id="head-nav-list">
-                    <span class="nav-item">Pages</span>
-                    <span class="nav-item">Prodact</span>
-                    <span class="nav-item">Shop</span>
-                    <span class="nav-item">Home</span>
-                </nav>
-                <ul id="head-icons">
-                    <li class="icon"><i class="fa fa-search" aria-hidden="true"></i></li>
-                    <li class="icon"><i class="fa fa-user" aria-hidden="true"></i></li>
-                    <li class="icon"><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
-                    <li class="icon"><i class="fa fa-bars" aria-hidden="true" id="menu-btn"></i></li>
-                </ul>
+        <div class="left-panel">
+            <div class="pt-11 flex justify-between items-end">
+                <h1 class="text-4xl">Mortgage Calculator</h1>
+                <a href="./index.html" class="underline">Clear All</a>
             </div>
-        </section>
-        <!-- /header section -->
 
-        <!-- header hero -->
-        <section id="hero-section">
-            <div class="container hero-container">
-                <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                <img class="hero__img" src="./img/hero_img.png" alt="bag">
-                <div class="hero__intro">
-                    <h6>IKIGAI</h6>
-                    <h1 class="hero__title">
-                        Leather bags <br>
-                        worth hugging.
-                    </h1>
-                    <p class="text">
-                        Keep your everyday style chic and on-trend with our selection 20+
-                        styles to choose from.
-                    </p>
-                    <a class="hero__btn" href="#">See Collection</a>
+            <form class="flex flex-col gap-y-2 h-full justify-evenly">
+                <div>
+                    <label class="label-style">Mortgage Amount</label>
+                    <div class="flex relative items-center">
+                        <input type="number" class="input-style z-0 pl-[50px]">
+                        <span class="left-span z-10">f</span>
+                    </div>
                 </div>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </div>
-        </section>
-        <!-- /header hero -->
 
-    </header>
-    <!-- /header  -->
- <!-- main -->
-    <main class="main">
-      <section class="brands container">
-        <div class="brands__container">
-          <span class="arrow"><box-icon name="left-arrow-alt"></box-icon></span>
-          <div class="brands__img">
-            <img src="./img/nike.svg" alt="nike logo" />
-            <img src="./img/hush.svg" alt="hush logo" />
-            <img src="./img/puma.svg" alt="puma logo" />
-            <img src="./img/shoe.svg" alt="shoe logo" />
-            <img src="./img/mars.svg" alt="mars logo" />
-            <img src="./img/supreme.svg" alt="supreme logo" />
-          </div>
-          <span class="arrow"
-            ><box-icon name="right-arrow-alt"></box-icon
-          ></span>
-        </div>
-      </section>
+                <div class="flex w-full gap-x-5 mt-[10px]">
+                    <div class="relative w-1/2">
+                        <label class="label-style">Mortgage Term</label>
+                        <div class="flex items-center relative">
+                            <input class="input-style pr-[45%]" type="text" name="mortgage-term">
+                            <span class="unit-style">years</span>
+                        </div>
+                    </div>
+                    <div class="relative w-1/2">
+                        <label class="label-style">Interest Rate</label>
+                        <div class="flex items-center relative">
+                            <input class="input-style pr-[25%]" type="text" name="interest-rate">
+                            <span class="unit-style">%</span>
+                        </div>
+                    </div>
+                </div>
 
-      <section class="bags container">
-        <div class="cards">
-          <div class="card">
-            <img src="./img/card1.png" alt="" />
-            <p class="card__text">Featured</p>
-            <h4 class="card__title">Nairo Series®</h4>
-          </div>
-          <div class="card">
-            <img src="./img/card2.png" alt="" />
-            <p class="card__text">New</p>
-            <h4 class="card__title">Kensho Series®</h4>
-          </div>
-          <div class="card">
-            <img src="./img/card3.png" alt="" />
-            <p class="card__text">Handmade</p>
-            <h4 class="card__title">Atarashi Series®</h4>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- / main -->
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container footer__wrapper">
-        <div class="footer__socials__wrapper">
-          <img src="./img/site logo.svg" alt="" />
-          <p class="footer__intro">
-            Phosf luorescently engage worldwide <br />
-            method process shopping.
-          </p>
-          <div class="footer__socials">
-            <span><box-icon type="logo" name="facebook"></box-icon></span>
-            <span><box-icon name="instagram-alt" type="logo"></box-icon></span>
-            <span><box-icon name="twitter" type="logo"></box-icon></span>
-            <span><box-icon name="envelope" type="solid"></box-icon></span>
-          </div>
+                <div>
+                    <label class="label-style">Mortgage Type</label>
+                    <div class="radio-style">
+                        <input type="radio" name="mortgage-type" value="fixed" class="hover:cursor-pointer">
+                        <label class="pl-6 text-2xl">Repayment</label>
+                    </div>
+                    <div class="radio-style">
+                        <input type="radio" name="mortgage-type" value="variable" class="hover:cursor-pointer">
+                        <label class="pl-6 text-2xl">Insert Only</label>
+                    </div>
+                </div>
+                <div class="submit w-[70%] h-[60px] flex text-[20px] justify-center items-center tracking-[3px] bg-amber-500 rounded-4xl border-2  border-gray-500">
+                    <button type="submit" class="flex hover:cursor-pointer items-center">
+                        <i class="fa fa-calculator hover:cursor-pointer"></i> Calculate Repayments
+                    </button>
+                </div>
+            </form>
         </div>
 
-        <div class="footer__select">
-          <select name="produt" id="product">
-            <option value="product">Product</option>
-            <option value="learn">Learn</option>
-            <option value="plugins">Plugins</option>
-            <option value="gallery">Gallery</option>
-            <option value="pricing">Pricing</option>
-          </select>
-          <select name="information" id="information">
-            <option value="information">Information</option>
-            <option value="learn">Learn</option>
-            <option value="plugins">Plugins</option>
-            <option value="gallery">Gallery</option>
-            <option value="pricing">Pricing</option>
-          </select>
-          <select name="support" id="support">
-            <option value="support">Support</option>
-            <option value="learn">Learn</option>
-            <option value="plugins">Plugins</option>
-            <option value="gallery">Gallery</option>
-            <option value="pricing">Pricing</option>
-          </select>
+        <div class="right-panel">
+            <img class="w-[40%]" src="./img/illustration-empty.svg">
+            <p class="text-amber-50 w-80%">Re shown her</p>
+            <p class="text-center text-gray-400">
+                Complete the form and click "calculate repayments" to <br>
+                see what your monthly repayments would be
+            </p>
         </div>
-
-        <div class="footer__nav">
-          <ul class="footer__list">
-            <li><h2>Product</h2></li>
-            <li><a class="footer__link" href="#">Learn</a></li>
-            <li><a class="footer__link" href="#">Plugins</a></li>
-            <li><a class="footer__link" href="#">Gallery</a></li>
-            <li><a class="footer__link" href="#">Pricing</a></li>
-          </ul>
-          <ul class="footer__list">
-            <li><h2>Information</h2></li>
-            <li>
-              <a class="footer__link" href="#">Privacy </a>
-            </li>
-            <li><a class="footer__link" href="#">Cookies</a></li>
-            <li><a class="footer__link" href="#">Terms</a></li>
-            <li><a class="footer__link" href="#">Security</a></li>
-          </ul>
-          <ul class="footer__list">
-            <li><h2>Support</h2></li>
-            <li>
-              <a class="footer__link" href="#">Updates </a>
-            </li>
-            <li><a class="footer__link" href="#">Discort</a></li>
-            <li><a class="footer__link" href="#">Startups</a></li>
-            <li><a class="footer__link" href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bottom__bar container">
-        <p class="design">© 2088 Nayzak Design</p>
-        <div class="footer__socials">
-          <span><box-icon type="logo" name="facebook"></box-icon></span>
-          <span><box-icon name="instagram-alt" type="logo"></box-icon></span>
-          <span><box-icon name="twitter" type="logo"></box-icon></span>
-          <span><box-icon name="envelope" type="solid"></box-icon></span>
-        </div>
-
-        <div class="language">
-          <select name="english" id="english">
-            <img src="./img/flag.svg" alt=" " width="40" />
-            <option value="english">English</option>
-          </select>
-          <select name="usd" id="usd">
-            <option value="usd">USD</option>
-          </select>
-        </div>
-      </div>
-    </footer>
-    <!-- / footer -->
-
-
-    <!-- scrips -->
-    <!-- <script src="./scripts/conponents.js"></script> -->
-    <script src="./scripts/menu.wrapper.js"></script>
-
+    </div>
 </body>
+
 
 </html>
