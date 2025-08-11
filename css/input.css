@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 input{
     display: block;
     border: solid 2px black;
@@ -36,7 +43,7 @@ input{
 }
 
 body{
-    @apply *:m-0 w-full bg-cyan-900 h-[100vh] flex flex-col justify-center items-center;
+    @apply w-full bg-cyan-900 h-[100vh] flex flex-col justify-center items-center;
 }
 
 
@@ -60,11 +67,11 @@ span:hover{
 }
 
 .left-panel,.right-panel,.main-flex{
-    @apply max-[592]:w-[100%]
+    @apply max-[592px]:w-[100%]
 }
 body{
-    @apply max-[592]:h-[1400px]
+    @apply max-[592px]:h-[100vh]
 }
 .left-panel,.right-panel{
-    @apply max-[592]:h-[600px]
+    @apply max-[592px]:h-[50vh]
 }
