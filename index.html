@@ -4,83 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAYZILLO_DARS_11</title>
-    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>FAYZILLO_DARS_11_GRID_LAYOUT</title>
     <link rel="stylesheet" href="./css/input.css">
     <link rel="stylesheet" href="./css/output.css">
 </head>
 
-<body class="">
-    <div class="main-flex">
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <h1 class="header-h1 text-[50px] font-extrabold font-serif w-[48px]">W.</h1>
+            <nav class="header-navbar">
+                <ul class="nav-list">
+                    <li class="header-list-item"><a href="/" class="text-gray-700 font-medium text-[16px]">Home</a></li>
+                    <li class="header-list-item"><a href="/" class="text-gray-700 font-medium text-[16px]">New</a></li>
+                    <li class="header-list-item"><a href="/" class="text-gray-700 font-medium text-[16px]">Popular</a></li>
+                    <li class="header-list-item"><a href="/" class="text-gray-700 font-medium text-[16px]">Treding</a></li>
+                    <li class="header-list-item"><a href="/" class="text-gray-700 font-medium text-[16px]">Categories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <div class="left-panel">
-            <div class="pt-11 flex justify-between items-end">
-                <h1 class="text-4xl">Mortgage Calculator</h1>
-                <a href="./index.html" class="underline">Clear All</a>
+    <main class="site-main">
+
+        <!-- MAIN SECTION 1-->
+        <section class="w-[992px] h-[85vh] grid grid-cols-3 grid-rows-[33.5vh_18.5vh_23.5vh] gap-x-7 gap-y-[2vh]">
+
+            <!-- BOX 1 -->
+            <div class="item-box1">
+
             </div>
+            <!-- /BOX 1 -->
 
-            <form class="flex flex-col gap-y-2 h-full justify-evenly">
-                <div>
-                    <label class="label-style">Mortgage Amount</label>
-                    <div class="flex relative items-center">
-                        <input type="number" class="input-style z-0 pl-[50px]">
-                        <span class="left-span z-10">f</span>
-                    </div>
+            <!-- BOX 2 -->
+            <div class="item-box2">
+                <h1 class="capitalize text-3xl text-amber-600">new</h1>
+                <div class="info">
+                    <h3 class="h3-style">hydrogen <span class="uppercase">vs</span> electric cars</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, commodi.</p>
                 </div>
-
-                <div class="flex w-full gap-x-5 mt-[10px]">
-                    <div class="relative w-1/2">
-                        <label class="label-style">Mortgage Term</label>
-                        <div class="flex items-center relative">
-                            <input class="input-style pr-[45%]" type="text" name="mortgage-term">
-                            <span class="unit-style">years</span>
-                        </div>
-                    </div>
-                    <div class="relative w-1/2">
-                        <label class="label-style">Interest Rate</label>
-                        <div class="flex items-center relative">
-                            <input class="input-style pr-[25%]" type="text" name="interest-rate">
-                            <span class="unit-style">%</span>
-                        </div>
-                    </div>
+                <div class="info">
+                    <h3 class="h3-style">the downsides of <span class="uppercase">ai</span> artisty</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, commodi.</p>
                 </div>
-
-                <div>
-                    <label class="label-style">Mortgage Type</label>
-                    <div class="radio-style">
-                        <input type="radio" name="mortgage-type" value="fixed" class="hover:cursor-pointer">
-                        <label class="pl-6 text-2xl">Repayment</label>
-                    </div>
-                    <div class="radio-style">
-                        <input type="radio" name="mortgage-type" value="variable" class="hover:cursor-pointer">
-                        <label class="pl-6 text-2xl">Insert Only</label>
-                    </div>
+                <div class="info">
+                    <h3 class="h3-style">is <span class="uppercase">vs</span> funding drying up?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, commodi.</p>
                 </div>
-                <div
-                    class="submit w-[70%] h-[60px] flex text-[20px] justify-center items-center tracking-[3px] rounded-4xl border-2 border-gray-500 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 opacity-70">
-                    <button type="submit" class="flex hover:cursor-pointer items-center">
-                        <i class="fa fa-calculator hover:cursor-pointer"></i>
-                        <p
-                            class="ml-2 text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 via-purple-500 via-blue-500 to-green-400 bg-[length:300%_300%] animate-gradient-move hover:cursor-pointer">
-                            Calculate Repayments
-                        </p>
-                    </button>
+            </div>
+            <!-- BOX 2 -->
+
+            <!-- BOX 3 -->
+            <div class="item-box3">
+                <h1 class="capitalize text-[46px]">the bright <br> future <span>
+                        <h1 class="lowercase inline">of</h1>
+                    </span> <br>
+                    web 3.0?
+                </h1>
+            </div>
+            <!-- /BOX 3 -->
+
+            <!-- BOX 4 -->
+            <div class="item-box4">
+                <p class="text-[16px] text-gray-700 leading-[1]">
+                    We dive into the next evolution of the web that claims to put the power of the platforms back into
+                    the hands of the people. But is it really fulfilling its promise?
+                </p>
+                <button class="border-none font-bold outline-0 h-[35px] rounded-[2px]  bg-amber-800 py-1 uppercase tracking-widest w-[55%] text-gray-900">
+                    read more
+                </button>
+            </div>
+            <!-- /BOX 4 -->
+
+            <div class="box5 box">
+                <img class="mini-img" src="./img/image-retro-pcs.jpg" alt="">
+                <div class="items-bottom ">
+                    <h1 class="box-number">
+                        01
+                    </h1>
+                    <h3 class="text-[15px] font-bold">
+                        Reviving Retro PCs
+                    </h3>
+                    <p class="box-paragraph">
+                        What happens when old PCs <br>
+                        are given modern upgrades?
+                    </p>
                 </div>
+            </div>
+            <div class="box6 box">
+                <img class="mini-img" src="./img/image-top-laptops.jpg" alt="">
+                <div class="items-bottom ">
+                    <h1 class="box-number">
+                        02
+                    </h1>
+                    <h3 class="text-[15px] font-bold">
+                        Top 10 Laptops of 2022
+                    </h3>
+                    <p class="box-paragraph">
+                        What happens when old PCs
+                        are given modern upgrades?
+                    </p>
+                </div>
+            </div>
+            <div class="box7 box">
+                <img class="mini-img" src="./img/image-gaming-growth.jpg" alt="">
+                <div class="items-bottom ">
+                    <h1 class="box-number">
+                        03
+                    </h1>
+                    <h3 class="text-[15px] font-bold">
+                        The Growth of Gaming
+                    </h3>
+                    <p class="box-paragraph">
+                        Our best picks for various needs and budgets.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- /MAIN SECTION 1 -->
+    </main>
 
-            </form>
-        </div>
-
-        <div class="right-panel">
-            <img class="w-[40%]" src="./img/illustration-empty.svg">
-            <p class="text-amber-50 w-80%">Re shown her</p>
-            <p class="text-center text-gray-400">
-                Complete the form and click "calculate repayments" to <br>
-                see what your monthly repayments would be
-            </p>
-        </div>
-    </div>
 </body>
-
 
 </html>
