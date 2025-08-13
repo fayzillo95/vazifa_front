@@ -1,77 +1,64 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* cotainer width */
+.boxes-container {
+    @apply w-[1100px] mx-auto
+}
+
+/* button style */
+.btn-style {
+    @apply capitalize rounded-[35px] w-[137px] h-[40px] text-white hover:shadow-[-1px_-10px_5px_rgba(139, 21, 120, 0.575)]
 }
 
 
-input{
-    display: block;
-    border: solid 2px black;
-}
+/* HERO */
 
-.input-style {
-    @apply h-13 w-full rounded-[6px] mt-[10px] pl-0.5 border-gray-400;
-}
-
-.unit-style {
-    @apply absolute right-[2px] text-[20px]  font-mono font-extrabold pr-[15px] bg-gray-200 px-4 mt-[10px] rounded-r-[6px] h-[48px] flex items-center;
-}
-
-.radio-style {
-    @apply flex w-full rounded-[6px] mt-[10px] border-2 h-13 items-center pl-4  border-gray-400 hover:border-gray-900;
-}
-
-.left-panel {
-    @apply w-1/2 flex flex-col px-8 max-[1159px]:w-[576px] max-[1159px]:h-[700px];
-}
-
-.right-panel {
-    @apply w-1/2 bg-cyan-950 
-    flex flex-col pl-8 justify-center gap-3 items-center 
-    rounded-bl-[100px] 
-    /* responsive */
-    max-[1159px]:w-[576px] max-[1159px]:h-[700px] max-[1159px]:rounded-b-[32px];
-}
-
-.main-flex {
-    @apply  bg-amber-50 flex w-6xl h-[700px] rounded-[32px] overflow-hidden  m-auto 
-    /* responsive */
-    max-[1159px]:flex-col max-[1159px]:h-[1600px] max-[1159px]:w-[576px] shadow-[25px_25px_10px_rgba(55,55,15,0.7)];
-}
-
-body{
-    @apply w-full bg-cyan-900 h-[100vh] flex flex-col justify-center items-center;
+.left-box-head {
+    @apply w-1/2 flex flex-col gap-[35px];
 }
 
 
-.left-span{
-    @apply h-[48px] ml-[2px] font-mono font-extrabold bg-gray-200 absolute mt-[10px] rounded-l-[6px] px-4 text-center flex items-center
+.right-box-head {
+    @apply flex flex-col items-center justify-end relative z-1 w-1/2;
 }
 
-.label-style{
-    @apply text-[16px] ;
+.hero-box1 {
+    @apply z-2 absolute rounded-b-full rounded-t-full rotate-[-45deg] bg-gradient-to-r from-[#F02AA6] to-[#4851FF] w-[1000px] h-[317px] ml-[636px] mb-[278px];
 }
 
-.submit:hover{
-    @apply  bg-amber-300  border-gray-900 cursor-pointer;
-}
-label:hover, h1:hover{
-    @apply hover:cursor-not-allowed
+.hero-box2 {
+    @apply flex justify-end items-end z-3 absolute bg-gradient-to-r w-[317px] from-[#FF6F48] to-[#F02AA6] rounded-b-full rounded-t-full h-[560px] ml-[120px];
 }
 
-span:hover{
-    @apply cursor-not-allowed
+/* SUBSCRIPTIONS */
+
+.hero-box3 {
+    @apply z-4 absolute bg-white h-[85px] rounded-[15px] ml-[410px] mb-[327px] bg-white shadow-[-5px_10px_10px_rgba(1,0,0,0.2)]
 }
 
-.left-panel,.right-panel,.main-flex{
-    @apply max-[592px]:w-[100%]
+.hero-box4 {
+    @apply z-5 absolute bg-white h-[85px] rounded-[15px] ml-[-248px] mb-[120px] bg-white shadow-[-5px_10px_10px_rgba(1,0,0,0.2)]
 }
-body{
-    @apply max-[592px]:h-[100vh]
+
+/* MAIN BOXES */
+
+.main-item {
+    @apply w-[350px] h-[322px] rounded-[15px] shadow-md bg-white flex flex-col justify-around pl-[28px] relative
+} 
+.main-item img{
+    @apply size-[56px] mt-[-45px]
 }
-.left-panel,.right-panel{
-    @apply max-[592px]:h-[50vh]
-}
+
+/* 
+    width: 350px;
+    height: 322px;
+    border-radius: 15px;
+    opacity: 1;
+    border: solid red 2px;
+*/
+
+/* 
+background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+
+
+*/
