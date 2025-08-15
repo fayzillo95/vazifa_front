@@ -1,0 +1,48 @@
+@import "../../node_modules/tailwindcss/";
+
+body {
+    @apply h-auto max-[592px]:w-[320px] 
+}
+
+.container {
+    @apply w-[1110px] mx-auto 
+    max-[592px]:w-full 
+    max-[592px]:px-2
+    ;
+}
+
+#list-items {
+    @apply grid grid-cols-3 w-[800px] grid-rows-3  gap-y-20 h-auto
+    max-[592px]:grid-cols-1 
+    max-[592px]:w-[320px] 
+    max-[592px]:items-center 
+    max-[592px]:mx-auto;
+}
+
+.item-box {
+    @apply w-[250px] h-[250px] rounded-2xl shadow-2xl flex flex-col 
+    max-[592px]:w-[320px] 
+    max-[592px]:items-center 
+    max-[592px]:mx-auto;
+}
+
+#user-cards {
+    @apply fixed right-[10px] top-5 w-[300px] text-gray-800 rounded-2xl bg-white z-50 
+    max-[1040px]:relative 
+    max-[1040px]:mx-auto
+    max-[592px]:w-[320px];
+    height: 256px;
+}
+
+.info-item {
+    @apply text-amber-950 w-full max-[592px]:text-sm max-[320px]:text-xs max-[592px]:text-black;
+}
+
+p,h2{
+    color: black !important;
+}
+
+
+#confirum-btn {
+    @apply max-[592px]:w-[80%]
+}
